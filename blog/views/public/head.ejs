@@ -1,0 +1,31 @@
+<!-- 
+    meta标签的作用有：搜索引擎优化（SEO），定义页面使用语言，自动刷新并指向新的页面，实现网页转换时的动态效果，控制页面缓冲，网页定级评价，控制网页显示的窗口等
+    meta标签的组成：meta标签共有两个属性，它们分别是http-equiv属性和name属性，不同的属性又有不同的参数值，这些不同的参数值就实现了不同的网页功能。
+
+    description 用来告诉搜索引擎你的网站主要内容
+
+    keywords用来告诉搜索引擎你网页的关键字是什么
+
+    http-equiv 相当于http的文件头 它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容，与之对应的属性值为content，content中的内容其实就是各个参数的变量值
+        meta标签的http-equiv属性语法格式是： 
+            <metahttp-equiv="参数"content="参数变量值"> 
+    
+        X-UA-Compatible是针对IE8新加的一个设置，对于IE8之外的浏览器是不识别的
+
+        <meta http-equiv="X-UA-Compatible" content="edge" />
+            Edge 模式通知 Windows Internet Explorer 以最高级别的可用模式显示内容，这实际上破坏了“锁定”模式。即如果你有IE9的话说明你有IE789，那么就调用高版本的那个也就是IE9
+
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" >
+            如果IE有安装Google Chrome Frame，那么就走安装的组件，如果没有就和<meta http-equiv="X-UA-Compatible" content="edge" />一样
+
+        说明：针对IE 6，7，8等版本的浏览器插件Google Chrome Frame，可以让用户的浏览器外观依然是IE的菜单和界面，但用户在浏览网页时，实际上使用的是Google Chrome浏览器内核
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>咯咯哒</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="description" content="咕咕咕">
+  <meta name="keywords" content="真爱粉基地">
+  <link rel="stylesheet" href="/stylesheets/main.css">
+  <link rel="stylesheet" href="/stylesheets/normalize.css">
+</head>

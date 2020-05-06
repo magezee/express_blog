@@ -1,0 +1,2 @@
+登入账号权限：
+node passWord     密码md5加密：9334cf859035e2f0318320ceb88c7e6d
